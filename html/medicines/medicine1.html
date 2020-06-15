@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="../../css/medicine1.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+     <div class="head">
+        <h2 class="medicine-title"> -By a "MEDICINE" Name.</h2>
+
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+      </div>
+
+      <div class="body">
+        <ul id="myUL">
+            <li><a href="../../index.html">extra</a></li>
+            <li><a href="#">extra</a></li>
+  
+            <li><a href="#">Billy</a></li>
+            <li><a href="../about.html">Bob</a></li>
+            <li><a href="#">alvin</a></li>
+            <li><a href="#">Christina</a></li>
+            <li><a href="#">Cindy</a></li>
+          
+          
+            <li><a href="medicineBYname/paracetamol.html">Paracetamol</a></li>
+            <li><a href="#">Agnes</a></li>
+          
+            
+            <li><a href="#">Billy</a></li>
+            <li><a href="#">Bob</a></li>
+          
+            <li><a href="#">alvin</a></li>
+            <li><a href="#">Chirag</a></li>
+            <li><a href="#">Cindy</a></li> 
+            <li><a href="#">Adele</a></li>
+            <li><a href="#">Agnes</a></li>
+          
+            <li><a href="#">Billy</a></li>
+            <li><a href="#">Bob</a></li>
+          
+            <li><a href="#">alvin</a></li>
+            <li><a href="#">Christina</a></li>
+            <li><a href="#">Cindy</a></li>
+          
+            <li><a href="#">Billy</a></li>
+            <li><a href="#">Bob</a></li>
+          
+            <li><a href="#">alvin</a></li>
+            <li><a href="#">Chirag</a></li>
+            <li><a href="#">Cindy</a></li> 
+            <li><a href="#">Adele</a></li>
+            <li><a href="#">Agnes</a></li>
+          
+            <li><a href="#">Billy</a></li>
+            <li><a href="#">Bob</a></li>
+          
+            <li><a href="#">alvin</a></li>
+            <li><a href="#">Christina</a></li>
+            <li><a href="#">Cindy</a></li>
+       
+         </ul>
+</div>  
+
+
+  
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>

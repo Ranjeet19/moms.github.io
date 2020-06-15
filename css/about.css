@@ -1,0 +1,106 @@
+*{
+    margin:0px;
+    padding:0px;
+    border-style:box;
+
+}
+
+body{
+    background-color:rgb(127, 206, 238);
+
+}
+
+
+
+
+
+.about-card{
+    background-color:rgb(36, 142, 184);
+    box-shadow:5px 5px 25px 5px rgb(9, 178, 245);
+    width:80%;
+    height:500px;
+    margin:50px 135px 50px 135px;
+    border-radius:5px;
+
+    color:;
+    
+}
+.logo-img{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+    margin:20px 0px 0px 20px;
+    box-shadow: 0 0 20px rgb(245, 245, 245);
+    border-style:solid;
+    border-color:white;
+}
+
+.logo-img:hover{
+    box-shadow: 0 0 40px rgb(245, 245, 245);
+    cursor:pointer;
+    transition:all 2s;
+ 
+}
+
+.heading{
+    display:flex;
+  
+}
+
+.mom{
+    margin: 160px 0px 0px 5px;
+    text-shadow: 0 0 15px rgb(245, 245, 245);
+    font-size:35px;
+    font-family:'viga';
+    color:white;
+}
+.mom:hover{
+    color:white;
+    transition:all 2s;
+    text-shadow: 0 0 45px rgb(245, 245, 245);
+    cursor:pointer;
+    
+}
+hr{
+    background-color:black;
+    height:1px;
+    border-radius:50%;
+
+}
+.text{
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(127, 206, 238);
+    margin:0px 70px 0px 230px ;
+}
+
+.home{
+    float:left;
+    height:25px;
+    width:80px;
+    background-color:rgb(234, 241, 241);
+    
+    margin:0px 70px 20px 920px;
+    text-decoration:none;
+    text-align:center;
+    padding:2px;
+    border-radius:5px;
+    box-shadow:0px 5px 10px rgb(68, 67, 67);
+    font-size:22px;
+}
+.home:hover{
+    cursor:pointer;
+    box-shadow:0px 10px 10px rgb(68, 67, 67);
+    transition:all 2s;
+   
+    background-color:rgb(127, 206, 238);
+   
+}
+a{
+    text-decoration:none;
+    color:rgb(36, 142, 184);
+}
+a:hover{
+    color:rgb(36, 142, 184);
+    transition:all 2s;
+}
