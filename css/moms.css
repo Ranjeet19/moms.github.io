@@ -255,6 +255,17 @@ a{
 
 
 
+
+
+
+.quick-link{
+	margin:2220px 0px 0px 0px;
+	height:300px ;
+	width:100%;
+	color:white;
+	background-color:rgb(6, 6, 51);
+}
+
 .h{
 	float:left;
 	position:fixed;
