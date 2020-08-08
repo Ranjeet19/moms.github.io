@@ -1,9 +1,16 @@
+/*created by Rnzt */
+
+/* it is the stylesheet of home page */
+
+
 *{
 	margin:0px;
 	padding:0px;
 	box-sizing:border-box;
 }
 
+
+/* heading section*/
 
 .heading{
 
@@ -76,6 +83,7 @@ h1{
 	text-decoration:none;
 
 }
+
 a{
 	text-decoration:none;
 	color:black;
@@ -94,11 +102,16 @@ a{
 
 
 
+
+/* left division containing all disease parts*/
+
 .e{
 	float:left;
+	z-index:2;
 }
 
 .left-division{
+	z-index:2;
 	position:left;
 	height:84%;
 	width:18%;
@@ -138,7 +151,7 @@ a{
 	color:rgb(64, 66, 61);
 }
 
-.left-division-view{
+.view{
 	position:absolute;
 	bottom:7px;
 	left:150px;
@@ -148,7 +161,7 @@ a{
 	font-size:17px;
 	float:right;
 }
-.left-division-view:hover{
+.view:hover{
 	color:black;
 
 
@@ -156,6 +169,9 @@ a{
 
 
 
+
+
+/*middle division part containing  describing part of disease quick-link etc*/
 
 .g{
 	margin:90px 0px 10px 280px;
@@ -269,7 +285,20 @@ a{
 	width:100%;
 	color:white;
 	background-color:rgb(6, 6, 51);
+	border-radius:5px;
 }
+
+
+
+
+
+
+
+
+
+
+/* right division containing medicines ,hospitals , slider(carasoul)*/
+
 
 .h{
 	float:left;
@@ -400,39 +429,6 @@ a{
 	transition:all 1.5s;
 	cursor:pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

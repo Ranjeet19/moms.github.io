@@ -1,4 +1,4 @@
-/* Created by A J */
+
 
 body {
 	margin: 0;
@@ -64,7 +64,7 @@ a {
   position: absolute;
   background-color: #ccc;
   top: 45%;
-  padding-top:13px;
+  padding-top:30px;
   font-size:18px;
   text-align:center;
   border-radius: 50%;
