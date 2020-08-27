@@ -101,7 +101,30 @@ a{
 }
 
 
-
+.bottom-top{
+	height:34px;
+	width:34px;
+	border-radius:50%;
+	position: absolute;
+	float:right;
+	background-color:red;
+	z-index:5;
+	padding:2px;
+	cursor:pointer;
+	top:900px;
+	left:1300px;
+}
+.bottom-top:hover{
+	cursor:pointer;
+	background:blue;
+	transition:1s;
+}
+.bottom-top-img{
+	height:30px;
+	width:30px;
+	border-radius:50%;
+	justify-content: center;
+}
 
 /* left division containing all disease parts*/
 
@@ -192,6 +215,7 @@ a{
 	 border-radius:10px;
 	color:blue;
 	text-align:center;
+	font-style:italic;
 	font-size:20px;
 
 }
@@ -397,6 +421,7 @@ a{
 }
 
 .holder{
+/*	background-image:url("../../ee.jpg");*/
 	margin:0px;
 	height:252px;
 	width:100%;
@@ -414,7 +439,7 @@ a{
 
 
 .syringe{
-	
+	display:;
 	 background-color:;
 	float:;
 	color:rgb(92, 113, 228);

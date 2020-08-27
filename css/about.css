@@ -1,7 +1,7 @@
 *{
     margin:0px;
     padding:0px;
-    border-style:box;
+    box-sizing:border-box;
 
 }
 
@@ -21,15 +21,14 @@ body{
     height:500px;
     margin:50px 135px 50px 135px;
     border-radius:5px;
-
-    color:;
     
 }
 .logo-img{
+    float:left;
     height:200px;
     width:200px;
     border-radius:50%;
-    margin:20px 0px 0px 20px;
+    margin:20px 0px 0px 30px;
     box-shadow: 0 0 20px rgb(245, 245, 245);
     border-style:solid;
     border-color:white;
@@ -42,13 +41,13 @@ body{
  
 }
 
-.heading{
-    display:flex;
-  
-}
 
 .mom{
-    margin: 160px 0px 0px 5px;
+    
+    position: ;
+    
+    padding:170px 0px 10px 100px;
+    margin:0px 0px 0px 100px;
     text-shadow: 0 0 15px rgb(245, 245, 245);
     font-size:35px;
     font-family:'viga';
@@ -64,26 +63,336 @@ body{
 hr{
     background-color:black;
     height:1px;
+    width:250px;
     border-radius:50%;
 
 }
 .text{
-    font-size:15px;
-    font-family: Arial, Helvetica, sans-serif;
-    color:rgb(127, 206, 238);
-    margin:0px 70px 0px 230px ;
+    margin:200px;
+	color:rgb(127, 206, 238);
+    	font-size:18px;
+    	font-style:italic;
+    	font-family: "Lora", serif;
+    
+    	margin:0px 70px 0px 230px ;
+}
+
+.button{
+    margin:10px 90px 0px 0px;
+    box-sizing:border-box;
+    float:right;
+    height:25px;
+    width:70px;
+    color:rgb(9, 147, 202);
+    background-color:rgb(234, 241, 241);
+    border:none;
+    text-decoration:none;
+    text-align:center;
+    padding:3px;
+    border-radius:5px;
+    box-shadow:0px 5px 10px rgb(68, 67, 67);
+    font-size:18px;
+}
+.button:hover{
+    cursor:pointer;
+    box-shadow:0px 10px 10px rgb(68, 67, 67);
+    transition:all 2s;
+color:white;
+    background-color:rgb(22, 178, 240);
+   
+}
+a{
+    text-decoration:none;
+    color:rgb(27, 164, 223);
+}
+a:hover{
+    color:whitesmoke;
+    transition:all 2s;
+}
+
+
+
+@media (max-width:1040px){
+
+
+
+    
+.about-card{
+    background-color:rgb(36, 142, 184);
+    box-shadow:5px 5px 25px 5px rgb(9, 178, 245);
+    width:100%;
+    height:500px;
+    margin:80px 0px 0px auto;
+    border-radius:5px;
+
+}
+    
+.logo-img{
+    float:;
+    height:120px;
+    width:120px;
+    border-radius:50%;
+    margin:30px 0px 0px 100px;
+}
+
+
+
+
+
+.mom{
+   
+    font-size:30px;
+    margin:-10px 30px 0px -50px;
+}
+
+hr{
+    background-color:black;
+    height:1px;
+    width:220px;
+    border-radius:50%;
+
+}
+.text{
+	color:rgb(151, 248, 183);
+    font-size:18px;
+    padding:5px 10px 0px 20px;
+    margin:0px 10px 0px 10px ;
+}
+
+}
+
+
+
+
+
+
+@media (max-width:770px){
+
+
+
+    
+    .about-card{
+        background-color:rgb(36, 142, 184);
+        box-shadow:5px 5px 25px 5px rgb(9, 178, 245);
+        width:100%;
+        height:800px;
+        margin:80px 0px 0px auto;
+        border-radius:5px;
+    
+    }
+        
+    .logo-img{
+        float:;
+        height:150px;
+        width:150px;
+        border-radius:50%;
+        margin:30px 0px 0px 100px;
+    }
+    
+    
+    
+    
+    
+    .mom{
+       
+        font-size:30px;
+        margin:-10px 30px 0px 0px;
+    }
+    
+    hr{
+        background-color:black;
+        height:1px;
+        width:220px;
+        border-radius:50%;
+        margin:0px 30px 0px 150px;
+    
+    }
+    .text{
+        color:rgb(151, 248, 183);
+        font-size:30px;
+        padding:5px 10px 0px 20px;
+        margin:0px 10px 0px 10px ;
+    }
+    
+    }
+    
+
+
+@media (max-width:580px){
+
+
+    
+    
+.about-card{
+    display:;
+    background-color:rgb(36, 142, 184);
+    box-shadow:5px 5px 25px 5px rgb(9, 178, 245);
+    width:100%;
+    height:615px;
+    margin:20px 0px 0px auto;
+    border-radius:5px;
+
+    color:;
+}
+    
+.logo-img{
+    float:;
+    height:120px;
+    width:120px;
+    border-radius:50%;
+    margin:30px 0px 0px 100px;
+}
+
+
+
+
+
+.mom{
+   
+    font-size:30px;
+    margin:-10px 30px 0px -50px;
+}
+
+hr{
+    background-color:black;
+    height:1px;
+    width:220px;
+    border-radius:50%;
+
+}
+.text{
+	color:rgb(151, 248, 183);
+    font-size:18px;
+    padding:5px 10px 0px 20px;
+    margin:0px 10px 0px 10px ;
+}
+
+.button{
+    display:;
+}
+
+
+
+}
+
+
+
+
+
+
+@media (max-width:420px){
+    
+.logo-img{
+    float:;
+    height:120px;
+    width:120px;
+    border-radius:50%;
+    margin:30px 0px 0px 150px;
+}
+
+
+
+
+
+.mom{
+   
+    font-size:30px;
+    margin:-10px 30px 0px 0px;
+}
+
+hr{
+    background-color:black;
+    height:1px;
+    width:220px;
+    border-radius:50%;
+
+}
+.text{
+	color:rgb(151, 248, 183);
+    font-size:18px;
+    padding:5px 10px 0px 20px;
+    margin:0px 10px 0px 10px ;
+}
+
+.button{
+    display:none;
+}
+
+
+}
+
+
+@media(max-width:360px){
+	
+
+body{
+    height:auto;
+    width:auto;
+}
+
+
+.about-card{
+    display:;
+    background-color:rgb(9, 178, 245);
+    box-shadow:5px 5px 25px 5px rgb(9, 178, 245);
+    width:auto;
+    height:auto;
+    margin:auto;
+    border-radius:5px;
+
+    
+}
+.logo-img{
+    float:;
+    height:120px;
+    width:120px;
+    border-radius:50%;
+    margin:30px 0px 0px 115px;
+    box-shadow: 0 0 20px rgb(245, 245, 245);
+    border-style:solid;
+    border-color:white;
+}
+
+
+
+
+
+.mom{
+    float:;
+    text-shadow: 0 0 15px rgb(245, 245, 245);
+    font-size:30px;
+    font-family:'viga';
+    color:white;
+    margin:-10px 30px 0px -35px;
+}
+
+hr{
+    background-color:black;
+    height:1px;
+    width:220px;
+    border-radius:50%;
+
+}
+.text{
+	color:rgb(151, 248, 183);
+    	font-size:18px;
+    	font-style:italic;
+    	font-family: "Lora", serif;
+        padding:5px 10px 0px 20px;
+    	margin:0px 10px 0px 10px ;
 }
 
 .home{
+    box-sizing:border-box;
     float:left;
-    height:25px;
+    height:auto;
     width:80px;
     background-color:rgb(234, 241, 241);
     
-    margin:0px 70px 20px 920px;
+    margin:50px 70px 20px 920px;
     text-decoration:none;
     text-align:center;
-    padding:2px;
+    padding:5px;
     border-radius:5px;
     box-shadow:0px 5px 10px rgb(68, 67, 67);
     font-size:22px;
@@ -93,14 +402,70 @@ hr{
     box-shadow:0px 10px 10px rgb(68, 67, 67);
     transition:all 2s;
    
-    background-color:rgb(127, 206, 238);
+    background-color:rgb(145, 214, 241);
    
 }
 a{
     text-decoration:none;
-    color:rgb(36, 142, 184);
+    color:rgb(27, 164, 223);
 }
 a:hover{
-    color:rgb(36, 142, 184);
+    color:whitesmoke;
     transition:all 2s;
+}
+
+.button{
+    display:none;
+}
+
+
+
+	}
+
+
+
+
+
+@media(max-width:320px){
+
+
+
+.logo-img{
+    float:;
+    height:120px;
+    width:120px;
+    border-radius:50%;
+    margin:30px 0px 0px 100px;
+}
+
+
+
+
+
+.mom{
+   
+    font-size:30px;
+    margin:-10px 30px 0px -50px;
+}
+
+hr{
+    background-color:black;
+    height:1px;
+    width:220px;
+    border-radius:50%;
+
+}
+.text{
+	color:rgb(151, 248, 183);
+    font-size:18px;
+    padding:5px 10px 0px 20px;
+    margin:0px 10px 0px 10px ;
+}
+
+.button{
+    display:none;
+}
+
+
+
 }

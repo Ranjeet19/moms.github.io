@@ -1,4 +1,3 @@
-// Created by A J
 
 var countries = [];
 
