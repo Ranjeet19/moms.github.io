@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:300,400,600,700,800");
+
 *{
     margin:0px;
     padding:0px;
     box-sizing:border-box;
+    font-family:"Lora", serif;
 
 }
 
@@ -43,9 +46,6 @@ body{
 
 
 .mom{
-    
-    position: ;
-    
     padding:170px 0px 10px 100px;
     margin:0px 0px 0px 100px;
     text-shadow: 0 0 15px rgb(245, 245, 245);
@@ -173,11 +173,14 @@ hr{
     
     .about-card{
         background-color:rgb(36, 142, 184);
-        box-shadow:5px 5px 25px 5px rgb(9, 178, 245);
         width:100%;
-        height:800px;
-        margin:80px 0px 0px auto;
+        height:auto;
+        margin:80px 0px 80px auto;
         border-radius:5px;
+
+        justify-content:center;
+        align-content: center;
+        padding-bottom:20px;
     
     }
         
@@ -213,6 +216,10 @@ hr{
         padding:5px 10px 0px 20px;
         margin:0px 10px 0px 10px ;
     }
+
+    button{
+        display:none;
+    }
     
     }
     
@@ -224,27 +231,21 @@ hr{
     
     
 .about-card{
-    display:;
-    background-color:rgb(36, 142, 184);
-    box-shadow:5px 5px 25px 5px rgb(9, 178, 245);
-    width:100%;
-    height:615px;
-    margin:20px 0px 0px auto;
-    border-radius:5px;
-
-    color:;
+  margin:80px 0px 20px auto;  
+  height:auto;
+  padding-bottom:20px;
 }
     
 .logo-img{
-    float:;
     height:120px;
     width:120px;
-    border-radius:50%;
     margin:30px 0px 0px 100px;
 }
 
 
-
+hr{
+    display:none;
+}
 
 
 .mom{
@@ -253,37 +254,21 @@ hr{
     margin:-10px 30px 0px -50px;
 }
 
-hr{
-    background-color:black;
-    height:1px;
-    width:220px;
-    border-radius:50%;
 
-}
 .text{
 	color:rgb(151, 248, 183);
     font-size:18px;
     padding:5px 10px 0px 20px;
     margin:0px 10px 0px 10px ;
 }
-
-.button{
-    display:;
 }
-
-
-
-}
-
-
-
-
-
 
 @media (max-width:420px){
-    
+    .about-card{
+        background-color:rgb(37, 157, 204);
+=
+    }   
 .logo-img{
-    float:;
     height:120px;
     width:120px;
     border-radius:50%;
@@ -300,13 +285,7 @@ hr{
     margin:-10px 30px 0px 0px;
 }
 
-hr{
-    background-color:black;
-    height:1px;
-    width:220px;
-    border-radius:50%;
 
-}
 .text{
 	color:rgb(151, 248, 183);
     font-size:18px;
@@ -321,6 +300,74 @@ hr{
 
 }
 
+
+
+@media(max-width:375px){
+	
+
+    body{
+        padding:30px 0px;
+        height:auto;
+        width:auto;
+    }
+    
+    
+    .about-card{
+       
+        background-color:rgb(9, 178, 245);
+        box-shadow:5px 5px 25px 5px rgb(9, 178, 245);
+        width:auto;
+        height:auto;
+        margin:auto;
+        border-radius:5px;
+    
+        
+    }
+    .logo-img{
+        float:;
+        height:120px;
+        width:120px;
+        border-radius:50%;
+        margin:30px 0px 0px 115px;
+        box-shadow: 0 0 20px rgb(245, 245, 245);
+        border-style:solid;
+        border-color:white;
+    }
+    
+    
+    
+    
+    
+    .mom{
+        float:;
+        text-shadow: 0 0 15px rgb(245, 245, 245);
+        font-size:30px;
+        font-family:'viga';
+        color:white;
+        margin:-10px 30px 0px -35px;
+    }
+    
+    
+    .text{
+        color:rgb(151, 248, 183);
+            font-size:18px;
+            font-style:italic;
+            font-family: "Lora", serif;
+            padding:5px 10px 0px 20px;
+            margin:0px 10px 0px 10px ;
+    }
+    
+    
+    .button{
+        display:none;
+    }
+    
+    
+    
+        }
+    
+    
+    
 
 @media(max-width:360px){
 	
@@ -366,13 +413,7 @@ body{
     margin:-10px 30px 0px -35px;
 }
 
-hr{
-    background-color:black;
-    height:1px;
-    width:220px;
-    border-radius:50%;
 
-}
 .text{
 	color:rgb(151, 248, 183);
     	font-size:18px;
@@ -382,37 +423,6 @@ hr{
     	margin:0px 10px 0px 10px ;
 }
 
-.home{
-    box-sizing:border-box;
-    float:left;
-    height:auto;
-    width:80px;
-    background-color:rgb(234, 241, 241);
-    
-    margin:50px 70px 20px 920px;
-    text-decoration:none;
-    text-align:center;
-    padding:5px;
-    border-radius:5px;
-    box-shadow:0px 5px 10px rgb(68, 67, 67);
-    font-size:22px;
-}
-.home:hover{
-    cursor:pointer;
-    box-shadow:0px 10px 10px rgb(68, 67, 67);
-    transition:all 2s;
-   
-    background-color:rgb(145, 214, 241);
-   
-}
-a{
-    text-decoration:none;
-    color:rgb(27, 164, 223);
-}
-a:hover{
-    color:whitesmoke;
-    transition:all 2s;
-}
 
 .button{
     display:none;

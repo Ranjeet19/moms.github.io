@@ -4,7 +4,7 @@
 
 
 	<!--<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   -->
-
+	<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 	
 	
 		<link rel="stylesheet" href="font/css/all.css">
@@ -18,9 +18,92 @@
 
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<!-- css for responsive Nav-Bar  -->
+		<style>
 		
+	  
+	 
+			.open-slide{
+				display:none;
+			  }
+		  
+			.side-nav{
+			  height:100%;
+			  width:0;
+			  position:fixed;
+			  z-index:5;
+			  top:0;
+			  right:0;
+			  background-color:rgb(19, 18, 18);
+			  opacity:0.9;
+			  overflow-x:hidden;
+			  padding-top:60px;
+			  transition:1s;
+			  display:flex;
+			  justify-content: start;
+			  align-items:center;
+			  flex-direction:column;
+			}
+			
+			.side-nav a{
+			  padding:10px 10px 10px 30px;
+			  text-decoration:none;
+			  font-size:22px;
+			  color:rgb(238, 238, 238);
+			  display:block;
+			  transition:0.3s;
+			  list-style:none;
+			  
+			}
+			
+					
+		.li-home1{
+			padding:4px;
+			text-align:center;
+			height:30px;
+			width:auto;
+			text-decoration:none;
+			overflow:hidden;
 
+		}
+		.li-home1:hover{
+			color:greenyellow;
+			cursor:pointer;
+		}
+			
+			.side-nav .btn-close{
+			  position:absolute;
+			  top:0;
+			  right:22px;
+			  font-size:36px;
+			  margin-left:50px;
+			  color:rgb(0, 255, 119);
+			}
+		   
+			
+			@media(max-width:800px){
+			  .anchor{display:none}
+			  .open-slide{
+				  display:block;
+				  margin:23px 10px;
+			  
+			  }
+			}
+			
+			/* @media(min-width:568px){
+			  /*.open-slide{display:none}*/
+			} */
+			
+			  </style>
+
+
+			  <!-- js files connection to firebase for contact form  -->
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-storage.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
 		</head>
 	<body>
 
@@ -31,23 +114,48 @@
 				<img name="slide" class="logo-img" src="img/her.jpg" height="20px">
 			</div>
 		
-	
-	
-			<div class="anchor">
-			
-				<a href="index.html"><li class="li-home"><i class="fas fa-home"></i> Home</li></a>
-				<a href="html/about.html"><li class="li-home"><i class="fab fa-app-store-ios"></i> About</li> </a>
-			<!--	 -->
-			 
-				<!--  -->
-			
-				<li class="li-home"><i class="fab fa-envira"></i> Gallery</li>
-				<a href="html/contribute/contribute.html"> <li class="li-home"><i class="fas fa-comment-dollar"></i> Contribute</li></a>
-			
+		<div class="anchor">
+					
+						<a href="index.html"><li class="li-home"><i class="fas fa-home"></i> Home</li></a>
+						<a href="html/about.html"><li class="li-home"><i class="fab fa-app-store-ios"></i> About</li> </a>
+				
+						<li class="li-home"><i class="fab fa-envira"></i> Gallery</li>
+						<a href="html/contribute/contribute.html"> <li class="li-home"><i class="fas fa-comment-dollar"></i> Contribute</li></a>
+					
+				
+					</div>
 		
+
+
+
+		<!--this section is for responsive nav or for mobile view-->
+			<div id="side-menu" class="side-nav">
+				<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+
+				
+				<a href="index.html"><li class="li-home1"><i class="fas fa-home"></i> Home</li></a>
+				<a href="html/about.html"><li class="li-home1"><i class="fab fa-app-store-ios"></i> About</li> </a>	
+				<a href="index.html"><li class="li-home1"><i class="fab fa-envira"></i> Gallery</li> </a>
+				<a href="html/medicines/medicines.html"> <li class="li-home1"><i class="fas fa-pills"></i> Medicines</li></a>
+				<a href="html/Contacts/contact.html">	<li class="li-home1"><i class="far fa-address-book"></i> Contact's</li></a>
+				<a href="html/hospital/hospital.html"><li class="li-home1"><i class="far fa-address-book"></i> Hospital's</li></a>
+				<a href="html/covid.html"><li class="li-home1"><i class="fas fa-pills"></i> Covid-19</li></a>
+				<a href="html/covid.html"><li class="li-home1"><i class="fas fa-user-graduate"></i> Student's </li></a>
+				<a href="html/contribute/contribute.html"> <li class="li-home1"><i class="fas fa-comment-dollar"></i> Contribute</li></a>
+
 			</div>
-			
+
+			<span class="open-slide">
+				<a href="#" onclick="openSlideMenu()">
+				  <svg width="30" height="30">
+					  <path d="M0,5 30,5" stroke="rgb(160, 157, 157)" stroke-width="5"/>
+					  <path d="M0,14 30,14" stroke="rgb(160, 157, 157)" stroke-width="5"/>
+					  <path d="M0,23 30,23" stroke="rgb(160, 157, 157)" stroke-width="5"/>
+				  </svg>
+				</a>
+			  </span>
 		</div>
+		
 		
 			
 		
@@ -65,19 +173,19 @@
 						<a href="html/disease/breast cancer/breastcancer.html"><li class="dieses">Breast-cancer</li></a>
 						<a href="html/disease/common cold/commoncold.html"><li class="dieses">Common-Cold</li></a>
 						<a href="html/disease/diabetes/diabetes.html"><li class="dieses">Diabetes</li></a>
-						<a href="html/disease/disjoints/disjoint.html"><li class="dieses">Disjoints</li></a>
+						<a href="html/disease/disjoints/disjoint.html"><li class="dieses">Dislocation</li></a>
 						<a href="html/disease/dengue/dengue.html"><li class="dieses">Dengue</li></a>
 						<a href="html/disease/depression/depression.html"><li class="dieses">Depression</li></a>
 						<a href="html/disease/fever/fever.html"><li class="dieses">Fever</li></a>
 						<a href="html/disease/flue/flue.html"><li class="dieses">Flue</li></a>
 						<a href="html/disease/heart attack/heartattack.html"><li class="dieses">Heart-Attack</li></a>
-						<a href="html/disease/hernia/hernia.html"><li class="dieses">hernia</li></a>
 						<a href="html/disease/kidney stone/kidneyston.html"><li class="dieses">Kidney-Stone</li></a>
 						<a href="html/disease/mensuration/mensuration.html"><li class="dieses">Mensuration</li></a>
 						<a href="html/disease/migraine/migraine.html"><li class="dieses">Migraine</li></a>
 						<a href="html/disease/pimples/pimples.html"><li class="dieses">Pimples</li></a>
 						<a href="html/disease/pneumonia/pneumonia.html"><li class="dieses">Pneumonia</li></a>
 						<a href="html/disease/sore throat/sorethroat.html"><li class="dieses">Sore-throat</li></a>
+						<a href="html/disease/stroke/stroke.html"><li class="dieses">Stroke</li></a>
 						<a href="html/disease/wrinkles/wrinkles.html"><li class="dieses">Wrinkles</li></a>
 						
 						
@@ -116,6 +224,22 @@
 
 
 
+			<div class="middle-division" data-aos="fade-right"
+			>
+				<img class= "middle-division-img"   src="img/stroke.webp" height="80px" width="90px">
+				<div class="middle-division-heading"><a href="../momss/html/disease/stroke/stroke.html"><h5>Everything you need to know about stroke...</h5></div>
+				<p class="middle-division-text"> 
+				
+				A stroke is a medical condition in which poor blood flow to the brain results in cell death. 
+				There are two main types of stroke: ischemic, due to lack of blood flow, and hemorrhagic, due to bleeding...
+				</p>
+			</a>
+
+				<a class ="a_mid_div" href="html/disease/stroke/stroke.html"><div class="read-more">
+				<p>Read more</p>
+				</div></a>
+
+			</div>
 
 		
 			<div class="middle-division">
@@ -298,10 +422,39 @@
 			</div>
 
 
+			
 
-			<div class="quick-link"   data-aos="flip-left"
+
+
+			 <!-- this div is for contact form -->
+
+			<div class="quick_link"   data-aos="flip-left"
 			data-aos-easing="ease-out-cubic"
 			data-aos-duration="2000">
+
+		<div class="contact_form">
+			
+			<h3 class="Review"> Message US!!</h3>
+			<div class="alert">Your message has been successfully sent !!..</div>
+			<form id="contactForm">
+				<label for="fname">Full Name :</label>
+				<input type="text" id="name" name="firstname" placeholder="Enter your name.." required>
+				
+
+				<label for="fname">Contact :</label>
+				<input type="text" id="contact" name="firstname" placeholder=" Not Necessary..." >
+			
+
+				<label for="lname">Email :</label>
+				<input type="email" id="email" name="lastname" placeholder="Enter your Email Id.." required>
+			
+			
+				<label for="subject">Message :</label>
+				<textarea id="message" name="subject" placeholder="Write Your Query, Thoughts, Message, Response..." required style="height:50px"></textarea>
+			
+				<button type="submit" value="Submit">Submit</button>
+			  </form>
+		</div>
 			
 
 			</div>
@@ -315,18 +468,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-		<div class="h">
+		<div class="right_container">
 
 			<div class="holder">
 			<div class="right-division-1">
@@ -343,7 +485,7 @@
 			</div>
 
 			<div class="right-division-4">
-				<li class="li-home"><i class="fas fa-user-graduate"></i> Student's </li>
+				<li class="li-home"><i class="fas fa-user-graduate"></i> H.worker</li>
 			</div>
 
 			<div class="right-division-5">
@@ -351,13 +493,9 @@
 			</div>
 		    
 
-	
-			<div class="syringe" ><i class="fas fa-syringe"></i></div>
-			<div class="hold-hand">
-				<i class="fas fa-syringe"></i></div>
+		
+		
 			</div>
-
-	
 				<!-- sliding part -->
 				<div class="galleryContainer">
 					<div class="slideShowContainer">
@@ -382,15 +520,67 @@
 					</div>
 					<div id="dotsContainer"></div>
 				</div>
-			
-		
-			</div>
+
 		</div>
 
-		<script src="js/myScript.js"></script>
-		<script>
-			AOS.init();
-		  </script>
 
+
+
+
+
+
+ 		<!-- This two script is for contact form initialization -->
+	 
+
+		<script>
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		var firebaseConfig = {
+			apiKey: "AIzaSyBncgKvF2OlIxwf3QEpub7Tagq8h4QCGLw",
+			authDomain: "momcontactform.firebaseapp.com",
+			databaseURL: "https://momcontactform.firebaseio.com",
+			projectId: "momcontactform",
+			storageBucket: "momcontactform.appspot.com",
+			messagingSenderId: "797178271804",
+			appId: "1:797178271804:web:de18e3cdc80b5c7ac20b39",
+			measurementId: "G-VC9B587FE3"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+		</script>
+		<script src="js/contactform.js">
+		</script>
+
+
+
+
+
+		<!-- this script file is for slide show at main page -->
+		<script src="js/myScript.js"></script>
+
+
+
+		
+		<!-- <script>
+			AOS.init();
+		  </script> -->
+
+
+
+	<!--Js for responsive navBar-->
+	<script>
+		function openSlideMenu(){
+		  document.getElementById('side-menu').style.width = '100%';
+
+		}
+	
+		function closeSlideMenu(){
+		  document.getElementById('side-menu').style.width = '0';
+		
+		}
+	  </script>
 	</body>
+
+
 </html>

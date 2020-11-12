@@ -9,6 +9,9 @@
 	box-sizing:border-box;
 }
 
+html{
+	scroll-behavior: smooth;
+}
 
 /* heading section*/
 
@@ -142,7 +145,6 @@ a{
 	margin:75px 5px 0px 15px ;
 	position:fixed;
 	box-shadow:0px 10px 10px 0px rgb(100, 89, 89);
-	text-align:;
 	float:left;
 	border-radius:5px;
 	font-family:sans-serif;
@@ -152,7 +154,7 @@ a{
 
 .left-division-heading{
 	cursor:pointer;
-	margin:5px 5px 5px 10px;
+	margin:5px 5px 0px 10px;
 	padding:5px;
 	font-size:22px;
 	color:;
@@ -165,7 +167,7 @@ a{
 	font-size:16px;
 	color:#30cbd6;
 	padding:;
-	margin:5px 10px 0px 30px;
+	margin:4px 10px 0px 30px;
 }
 
 
@@ -207,7 +209,7 @@ a{
 
 .top-middle-division{
 	float:left;
-	 height:40px;
+	 height:30px;
 	 width:100%;
 	 background-color:white;
 	 margin:0px 0px 0px 0px ;
@@ -270,10 +272,9 @@ a{
 
 
 .read-more{
-	position:;
+
 	float:right;
 	z-index: 1;
-	position: ;
 	margin-right: 8px;
 	margin-top: 15px;
 	float:right;
@@ -300,19 +301,72 @@ a{
 
 
 
+/* contact form css part */
 
-
-.quick-link{
+.quick_link{
+	display:flex;
+	justify-content:space-between;
 	float:left;
 	margin:10px 0px 0px 0px;
-	height:300px ;
+	padding:20px;
+	height:auto ;
 	width:100%;
 	color:white;
 	background-color:rgb(6, 6, 51);
 	border-radius:5px;
 }
 
+.Review{
+	
+	text-align:center;
+	
+}
 
+.alert{
+	background:green;
+	color:white;
+	justify-content:center;
+	text-align:center;
+	padding:10px;
+	margin:10px;
+	font-family:sans-serif;
+	display:none;
+
+}
+
+input[type=email], [type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+  }
+  
+  button[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	border:none;
+  }
+  
+  button[type=submit]:hover {
+	background-color: rgb(8, 240, 19);
+	transition:all 1s;
+	cursor:pointer;
+	border:none;
+  }
+  
+  .container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+  }
 
 
 
@@ -324,8 +378,8 @@ a{
 /* right division containing medicines ,hospitals , slider(carasoul)*/
 
 
-.h{
-	float:left;
+.right_container{
+	float:right;
 	position:fixed;
 	margin:75px 5px 0px 900px;
 	width:32%;
@@ -333,6 +387,7 @@ a{
 	height:84%;
 	border-radius:3px;
 	box-shadow:0px 15px 15px 0px rgb(100, 89, 89);
+	font-size:16px;
 }
 
 .right-division-1{
@@ -353,6 +408,7 @@ a{
 }
 
 .right-division-2{
+
 	float:left;
 	overflow:hidden;
 	position:absolute;
@@ -370,6 +426,7 @@ a{
 }
 
 .right-division-3{
+
 	float:left;
 	overflow:hidden;
 	position:absolute;
@@ -387,11 +444,12 @@ a{
 }
 
 .right-division-4{
+
 	position:absolute;
 	float:left;
 	overflow:hidden;
 	height:30px;
-	width:100px;
+	width:105px;
 	background-color:white;
 	margin:155px 0px 3px 240px ;
 	border-radius:5px;
@@ -404,13 +462,14 @@ a{
 }
 
 .right-division-5{
-	position:absolute;
+
+	position: absolute;
 	float:left;
 	overflow:hidden;
 	height:30px;
 	width:100px;
 	background-color:white;
-	margin:205px 0px 3px 320px ;
+	margin:200px 0px 0px 320px ;
 	border-radius:5px;
 	box-shadow:0px 5px 5px 0px rgb(100, 89, 89);
 	list-style:none;
@@ -421,13 +480,30 @@ a{
 }
 
 .holder{
-/*	background-image:url("../../ee.jpg");*/
-	margin:0px;
-	height:252px;
+	background-image:url("../img/ww.jpg");
+	height:235px;
 	width:100%;
 	background-color:#35e3f0;
+	
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .hold-hand{
 
 	float:;
@@ -439,6 +515,8 @@ a{
 
 
 .syringe{
+	display:none;
+
 	display:;
 	 background-color:;
 	float:;
@@ -458,4 +536,4 @@ a{
 
 
 
-
+ */

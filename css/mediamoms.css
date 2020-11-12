@@ -5,23 +5,10 @@
 @media (max-width:1050px){
     /*media for heading part */
     .heading{
-        z-index:2;
         margin :0px 0px 10px 0px;
-        display:flex;
-        justify-content:space-between;
-        background-color:white;
+      
         height:70px;
         width:100%;
-        
-        border-radius:5px;
-        box-shadow: 0 0 25px #333;
-        top: 0;
-        left: 0;
-         
-        overflow:hidden;
-    
-        opacity:;
-        
     }
     
     
@@ -33,9 +20,7 @@
         background-color:white;
     }
     
-    .logo:hover{
-        cursor:pointer;
-    }
+
     
     
     .logo-heading{
@@ -271,7 +256,7 @@
 
 
 
-.h{
+.right_container{
 	float:left;
 	position:fixed;
 	margin:75px 5px 0px 710px;
@@ -522,7 +507,7 @@
     
     /*media for carosoul containing division */
     
-    .h{
+    .right_container{
         z-index: 1;
         display:wrap;
         float:left;
@@ -925,7 +910,7 @@
     
     /*media for carosoul containing division */
     
-    .h{
+    .right_container{
         z-index: 1;
         display:wrap;
         float:left;
@@ -1322,7 +1307,7 @@
     
     /*media for carosoul containing division */
     
-    .h{
+    .right_container{
         z-index: 1;
         display:wrap;
         float:left;
@@ -1725,7 +1710,7 @@
     
     /*media for carosoul containing division */
     
-    .h{
+    .right_container{
         z-index: 1;
         display:wrap;
         float:left;
@@ -2130,7 +2115,7 @@
     
     /*media for carosoul containing division */
     
-    .h{
+    .right_container{
         z-index: 1;
         display:wrap;
         float:left;
@@ -2502,7 +2487,7 @@
     
     /*media for carosoul containing division */
     
-    .h{
+    .right_container{
         z-index: 1;
         display:wrap;
         float:left;
